@@ -7,6 +7,7 @@ import doctorsRoutes from "./src/routes/doctors.js";
 import doctorsRegisterRoutes from "./src/routes/doctorsRegister.js"
 import loginRoutes from "./src/routes/login.js"
 import logoutRoutes from "./src/routes/logout.js"
+import citesRoutes from "./src/routes/cite.js"
 
 //Creo una constante que es igual a la libreria que acabo de crear, y la ejecuto.
 const app = express();
@@ -25,6 +26,7 @@ app.use("/api/doctors", doctorsRoutes);
 app.use("/api/registerDoctors", doctorsRegisterRoutes);
 app.use("/api/login", loginRoutes);
 app.use("/api/logout", logoutRoutes);
+app.use("/api/cites", citesRoutes);
 
 
 export default app;
