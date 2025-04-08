@@ -23,3 +23,5 @@ patientsController.deletePatients = async(req,res) =>{
 
     res.json({message: "Patient deleted"})
 }
+
+export default patientsController;
