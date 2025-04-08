@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 //para usar las cookies
-//-----> app.use (cookieParser());
+app.use (cookieParser());
 
 
 
