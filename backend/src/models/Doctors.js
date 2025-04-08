@@ -25,13 +25,14 @@ const doctorsSchema = new Schema({
         match:[
             /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}$/,
             "Por favor ingrese un correo electronico valido", //validar el correo electronico
-        ],
+        ]
+    },
 
         password:{
             type: String,
             require: true,
             minlenght: 6 //para poner un minimo de caracteres
-        },   
+        } 
         
 
     },{
